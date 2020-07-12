@@ -124,7 +124,76 @@ main .main2 {
   display: flex;
   justify-content: center; }
   main .main2 img {
-    padding: 0px 15px 0px 15px; }
+    margin: 0px 15px 0px 15px; }
+  main .main2 .anh1 {
+    position: relative; }
+    main .main2 .anh1 .bl {
+      position: absolute;
+      z-index: 1; }
+    main .main2 .anh1 .food {
+      position: absolute;
+      top: 50px;
+      left: 40px;
+      width: 77%;
+      z-index: 2; }
+      main .main2 .anh1 .food .food-header {
+        display: flex;
+        margin-top: 33%; }
+        main .main2 .anh1 .food .food-header img {
+          width: 32px;
+          height: 32px;
+          margin-left: 0px;
+          margin-right: 5px; }
+        main .main2 .anh1 .food .food-header h3 {
+          color: #da585c;
+          font-family: "Nunito", sans-serif;
+          font-size: 30px; }
+      main .main2 .anh1 .food span {
+        margin-top: 5px;
+        font-family: "Nunito", sans-serif;
+        font-size: 15px;
+        color: white; }
+      main .main2 .anh1 .food .food-footer {
+        display: flex;
+        margin-top: 30%; }
+        main .main2 .anh1 .food .food-footer h2 {
+          font-size: 20px;
+          font-family: "Nunito", sans-serif;
+          font-weight: bold;
+          color: white; }
+        main .main2 .anh1 .food .food-footer img {
+          width: 16px;
+          height: 16px; }
+  main .main2 .anh2 {
+    position: relative; }
+    main .main2 .anh2 h3 {
+      position: absolute;
+      bottom: 8px;
+      left: 55px;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: "Nunito", sans-serif;
+      color: white; }
+  main .main2 .anh3 {
+    position: relative; }
+    main .main2 .anh3 h3 {
+      position: absolute;
+      bottom: 8px;
+      left: 60px;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: "Nunito", sans-serif;
+      color: white; }
+  main .main2 .anh4 {
+    position: relative; }
+    main .main2 .anh4 h3 {
+      position: absolute;
+      bottom: 8px;
+      left: 95px;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: "Nunito", sans-serif;
+      color: white; }
 main .main3 {
   display: flex;
   width: 100%;
@@ -368,13 +437,13 @@ main .main6 {
       display: block;
       margin-top: 30%; }
     main .main6 .tex6 h3 {
-      margin-top: -1%;
+      margin-top: 10%;
       font-family: "Nunito", sans-serif;
       font-size: 18px;
       color: #da585c;
       font-weight: bold; }
     main .main6 .tex6 h4 {
-      margin-top: 10%;
+      margin-top: -1%;
       font-family: "Nunito", sans-serif;
       font-size: 16px; }
     main .main6 .tex6 .icons-main6 {

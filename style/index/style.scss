@@ -165,7 +165,92 @@ main {
         justify-content: center;
         // width: 100%;
         img {
-            padding: 0px 15px 0px 15px;
+            margin: 0px 15px 0px 15px;
+        }
+        .anh1 {
+            position: relative;
+            .bl {
+                position: absolute;
+                z-index: 1;
+            }
+            .food {
+                position: absolute;
+                top: 50px;
+                left: 40px;
+                width: 77%;
+                z-index: 2;
+                .food-header {
+                    display: flex;
+                    margin-top: 33%;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        margin-left: 0px;
+                        margin-right: 5px;
+                    }
+                    h3 {
+                        color: $color-red;
+                        font-family: $font-nunito;
+                        font-size: 30px;
+                    }
+                }
+                span {
+                    margin-top: 5px;
+                    font-family: $font-nunito;
+                    font-size: 15px;
+                    color: white;
+                }
+                .food-footer {
+                    display: flex;
+                    margin-top: 30%;
+                    h2 {
+                        font-size: 20px;
+                        font-family: $font-nunito;
+                        font-weight: bold;
+                        color: white;
+                    }
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+        .anh2 {
+            position: relative;
+            h3 {
+                position: absolute;
+                bottom: 8px;
+                left: 55px;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: $font-nunito;
+                color: white;
+            }
+        }
+        .anh3 {
+            position: relative;
+            h3 {
+                position: absolute;
+                bottom: 8px;
+                left: 60px;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: $font-nunito;
+                color: white;
+            }
+        }
+        .anh4 {
+            position: relative;
+            h3 {
+                position: absolute;
+                bottom: 8px;
+                left: 95px;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: $font-nunito;
+                color: white;
+            }
         }
     }
     //main3
@@ -479,14 +564,14 @@ main {
                 margin-top: 30%;
             }
             h3 {
-                margin-top: -1%;
+                margin-top: 10%;
                 font-family: $font-nunito;
                 font-size: 18px;
                 color: $color-red;
                 font-weight: bold;
             }
             h4 {
-                margin-top: 10%;
+                margin-top: -1%;
                 font-family: $font-nunito;
                 font-size: 16px;
             }
