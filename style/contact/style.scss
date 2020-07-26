@@ -14,7 +14,7 @@ header {
     background-size: 100% 93%;
     width: 100%;
     height: 600px;
-    .menu {
+    .menu1 {
         display: flex;
         width: 100%;
         padding-left: 5%;
@@ -149,7 +149,6 @@ main {
 
 footer {
     width: 100%;
-    height: 100px;
     .bg {
         position: absolute;
         z-index: -1;
@@ -163,9 +162,11 @@ footer {
             padding-top: 6%;
             margin-left: 5%;
             .logo {
-                width: 75%;
-                height: 50%;
-                padding-left: 20%;
+                img {
+                    width: 75%;
+                    height: 50%;
+                    padding-left: 20%;
+                }
             }
             .icons {
                 text-align: center;
@@ -174,7 +175,7 @@ footer {
         .about-us {
             width: 20%;
             padding-top: 5%;
-            margin-left: 5%;
+            margin-left: 3%;
             .top {
                 font-family: $font-nunito;
                 font-size: 18px;
@@ -190,7 +191,7 @@ footer {
         .quick-link {
             width: 20%;
             padding-top: 5%;
-            margin-left: 5%;
+            margin-left: 3%;
             .top {
                 font-family: $font-nunito;
                 font-size: 18px;
@@ -211,6 +212,276 @@ footer {
                 font-size: 16px;
                 color: white;
                 font-weight: bold;
+            }
+            .inp {
+                display: flex;
+                .tex {
+                    margin-right: 3%;
+                    .ft-inp {
+                        border: none;
+                        border-radius: 3px;
+                        width: 250px;
+                        height: 35px;
+                        color: #DA585C;
+                    }
+                }
+                button {
+                    border: none;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 3px;
+                    img {
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    header {
+        height: auto;
+        background-attachment: unset;
+        .sendUs {
+            font-size: 60px;
+        }
+        .yourRequest {
+            font-size: 60px;
+            padding-bottom: 5%;
+        }
+    }
+    .menu1 {
+        .menu-between {
+            padding-left: 15%;
+            .between-child {
+                margin-left: 10%;
+            }
+        }
+        .menu-right {
+            a {
+                img {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    main {
+        .form-send {
+            width: 80%;
+            .form-header {
+                height: 120px;
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .map {
+            img {
+                width: 50%;
+            }
+        }
+    }
+    footer {
+        height: 150px;
+        .footer-logo {
+            padding-top: 9%;
+            .kity-shop {
+                padding-top: 9%;
+                .icons {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .about-us {
+                width: 30%;
+                margin-left: 5%;
+                .top {
+                    font-size: 16px;
+                }
+                .text1 {
+                    font-size: 14px;
+                }
+            }
+            .quick-link {
+                opacity: 0;
+                width: 5%;
+                .top {
+                    font-size: 16px;
+                }
+                .text2 {
+                    font-size: 14px;
+                }
+            }
+            .update-our {
+                .inp {
+                    .tex {
+                        .ft-inp {
+                            width: 135px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    header {
+        height: auto;
+        background-attachment: unset;
+        .sendUs {
+            font-size: 40px;
+        }
+        .yourRequest {
+            font-size: 40px;
+            padding-bottom: 5%;
+        }
+    }
+    .menu1 {
+        .menu-between {
+            width: 40%;
+            .between-child {
+                margin-left: 5%;
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+        .menu-right {
+            a {
+                img {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    main {
+        .contact {
+            font-size: 28px;
+        }
+        .lienhe {
+            .working {
+                h3 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+            .hotline {
+                h3 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+            .address {
+                h3 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        .form-send {
+            width: 80%;
+            height: 666px;
+            .form-header {
+                height: 60px;
+                h1 {
+                    font-size: 20px;
+                }
+            }
+            .form-contact {
+                padding: 30px 40px 0px 40px;
+            }
+        }
+        .map {
+            img {
+                width: 50%;
+            }
+        }
+    }
+    footer {
+        height: 120px;
+        .footer-logo {
+            padding-top: 11%;
+            .kity-shop {
+                padding-top: 0%;
+                .logo {
+                    margin-top: 20px;
+                    img {
+                        width: 80%;
+                        height: 65%;
+                        // padding-left: 20%;
+                        display: block;
+                    }
+                }
+                .icons {
+                    height: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 10px;
+                        height: 10px;
+                        padding-left: 1px;
+                    }
+                }
+            }
+            .about-us {
+                width: 30%;
+                padding-top: 0%;
+                .top {
+                    opacity: 0;
+                    font-size: 0px;
+                }
+                .text1 {
+                    font-size: 10px;
+                }
+            }
+            .quick-link {
+                width: 1%;
+                opacity: 0;
+                padding-top: 0%;
+                .top {
+                    font-size: 0px;
+                }
+                .text2 {
+                    font-size: 0px;
+                }
+            }
+            .update-our {
+                width: 30%;
+                padding-top: 0%;
+                span {
+                    visibility: hidden;
+                    font-size: 1px;
+                }
+                .inp {
+                    .tex {
+                        .ft-inp {
+                            width: 80px;
+                            height: 20px;
+                            font-size: 10px;
+                        }
+                    }
+                    button {
+                        margin-top: 4px;
+                        width: 20px;
+                        height: 20px;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            padding: 2px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- css bs4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -16,16 +18,42 @@
 </head>
 
 <body>
-
     <div id="carouselId" class="carousel slide slideOfYou" data-ride="carousel">
         <div class="menu">
             <img src="./public/image/logo-final.png" alt="" class="menu-logo">
+
             <div class="menu-between">
                 <h3 class="between-child"><a href="#">Home</a></h3>
                 <h3 class="between-child"><a href="#">Shop</a></h3>
                 <h3 class="between-child"><a href="#">Service</a></h3>
-                <h3 class="between-child"><a href="./contact.html">Contact</a></h3>
+                <h3 class="between-child-fix"><a href="./contact.html">Contact</a></h3>
             </div>
+
+            <div class="_item">
+                <a href="#" class="layer1">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- Navigation links (hidden by default) -->
+                <div class="layer2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <h3 class="between-child"><a href="#">Home</a></h3>
+                    <h3 class="between-child"><a href="#">Shop</a></h3>
+                    <h3 class="between-child"><a href="#">Service</a></h3>
+                    <h3 class="between-child-fix"><a href="./contact.html">Contact</a></h3>
+                </div>
+            </div> -->
             <div class="menu-right">
                 <a href="#"><img src="./public/icons/search.png" alt=""></i>
                 </a>
@@ -131,7 +159,7 @@
                 </div>
                 <div class="fish">
                     <img src="./public/image/index/fish.png" alt="">
-                    <span>ADD TO CART</span>
+                    <!-- <span>ADD TO CART</span> -->
                 </div>
             </div>
         </div>
@@ -149,7 +177,7 @@
                 </div>
                 <div class="fish">
                     <img src="./public/image/index/fish.png" alt="">
-                    <span>ADD TO CART</span>
+                    <!-- <span>ADD TO CART</span> -->
                 </div>
             </div>
             <div class="img4">
@@ -181,7 +209,24 @@
                     </div>
                 </div>
 
-                <div class="prodImg">
+                <div class="prod">
+                    <img class="prod-child1" src="./public/image/index/heart.png" alt="">
+                    <img class="prod-child2" src="./public/image/index/product-meoxanh.png" alt="product">
+                    <div class="add-cart">
+                        <div class="tex">
+                            <h3>Royal Canin</h3>
+                            <span>90.000VNĐ</span>
+                        </div>
+                        <div class="btn-cart">
+                            <button class="btn-flex">
+                                <h4>ADD TO CARD</h4>
+                                <img src="./public/icons/shopping-mini.png" alt="i">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="prodImg">
                     <img class="prodImg4" src="./public/image/index/new-arrival.png" alt="">
                     <img class="prodImg3" src="./public/image/index/heart-default.png" alt="">
                     <img class="prodImg2" src="./public/image/index/product1.png" alt="product">
@@ -198,8 +243,8 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <div class="prod">
+                </div> -->
+                <div class="prod-delete">
                     <img class="prod-child1" src="./public/image/index/heart.png" alt="">
                     <img class="prod-child2" src="./public/image/index/product.png" alt="product">
                     <div class="add-cart">
@@ -217,7 +262,7 @@
                 </div>
             </div>
             <div class="cate" style="margin-top:10px">
-                <div class="prod">
+                <div class="prod-delete">
                     <img class="prod-child1" src="./public/image/index/heart-default.png" alt="">
                     <img class="prod-child2" src="./public/image/index/product.png" alt="product">
                     <div class="add-cart">
@@ -233,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="prod">
+                <div class="prod-delete">
                     <img class="prod-child1" src="./public/image/index/heart-default.png" alt="">
                     <img class="prod-child2" src="./public/image/index/product.png" alt="product">
                     <div class="add-cart">
@@ -249,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="prod">
+                <div class="prod-delete">
                     <img class="prod-child1" src="./public/image/index/heart.png" alt="">
                     <img class="prod-child2" src="./public/image/index/product.png" alt="product">
                     <div class="add-cart">
@@ -270,8 +315,8 @@
 
         <div class="main6">
             <div class="img6">
-                <img class="img6-1" src="./public/image/index/owner.png" alt="owner">
-                <img src="./public/image/index/owner-green.png" alt="">
+                <img class="img6-1" src="./public/image/index/cogai.png" alt="owner">
+                <!-- <img src="./public/image/index/owner-green.png" alt=""> -->
             </div>
             <div class="tex6">
                 <img src="./public/image/index/icon-owenr.png" alt="">
@@ -291,7 +336,11 @@
         <img src="./public/image/footer.png" class="bg" alt="">
         <div class="footer-logo">
             <div class="kity-shop">
-                <img src="./public/image/logo-footer.png" class="logo" alt="" srcset="">
+
+                <div class="logo">
+                    <img src="./public/image/logo-footer.png" alt="" srcset="">
+                </div>
+
                 <div class="icons">
                     <img src="./public/icons/GroupFB.png" alt="">
                     <img src="./public/icons/GroupCamera.png" alt="">
@@ -312,13 +361,12 @@
             </div>
             <div class="update-our">
                 <span>Update Our New Products</span>
-                <div class="text-input">
-                    <form class="form-inline">
-                        <label class="sr-only" for="inlineFormInputName2">Name</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="*Enter Your Email">
-                        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-                        <button type="submit" class="btn btn-primary mb-2" style="background-color: white; border: none;"><img src="./public/icons/send 1.png" alt=""></button>
-                    </form>
+
+                <div class="inp">
+                    <div class="tex">
+                        <input type="text" class="ft-inp" placeholder="*Enter Your Email">
+                    </div>
+                    <button class="bt"><img src="./public/icons/send 1.png" alt=""></button>
                 </div>
             </div>
         </div>
@@ -328,6 +376,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="./javascrip/index/script.js"></script> -->
+
 </body>
 
 </html>
